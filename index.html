@@ -33,25 +33,34 @@
       }
     </style>
   </head>
-  <body class="p-4">
-    <header class="w-full text-center mt-8" style="color: hsl(300, 43%, 22%)">
-      <h1 class="text-3xl font-bold mb-5">
-        10,000+ of our users love our products.
-      </h1>
+  <body class="p-4 lg:p-8">
+    <header
+      class="w-full text-center mt-8 lg:flex lg:items-center"
+      style="color: hsl(300, 43%, 22%)"
+    >
+      <!-- header content -->
+      <div class="lg:text-left">
+        <h1 class="text-3xl font-bold mb-5">
+          10,000+ of our users love our products.
+        </h1>
 
-      <p class="mb-7">
-        We only provide great products combined with excellent customer service.
-        See what our satisfied customers are saying about our services.
-      </p>
+        <p class="mb-7">
+          We only provide great products combined with excellent customer
+          service. See what our satisfied customers are saying about our
+          services.
+        </p>
+      </div>
 
       <!-- ratings -->
       <div class="flex flex-col w-full h-80 justify-evenly items-center mb-7">
         <div
-          class="w-full rounded-md p-4 font-bold"
+          class="w-full rounded-md p-4 font-bold lg:flex lg:items-center lg:w-5/6 lg:justify-evenly lg:self-start"
           style="background-color: hsl(300, 24%, 96%)"
         >
           <!-- stars -->
-          <div class="w-24 mx-auto flex justify-between items-center mb-4">
+          <div
+            class="w-24 mx-auto flex justify-between items-center mb-4 lg:mb-0 lg:mx-0"
+          >
             <img
               src="./images/icon-star.svg"
               alt="star icon"
@@ -81,11 +90,13 @@
           <h3>Rated 5 Stars in Reviews</h3>
         </div>
         <div
-          class="w-full rounded-md p-4 font-bold"
+          class="w-full rounded-md p-4 font-bold lg:flex lg:items-center lg:w-5/6 lg:justify-evenly lg:self-center"
           style="background-color: hsl(300, 24%, 96%)"
         >
           <!-- stars -->
-          <div class="w-24 mx-auto flex justify-between items-center mb-4">
+          <div
+            class="w-24 mx-auto flex justify-between items-center mb-4 lg:mb-0 lg:mx-0"
+          >
             <img
               src="./images/icon-star.svg"
               alt="star icon"
@@ -115,11 +126,13 @@
           <h3>Rated 5 Stars in Report Guru</h3>
         </div>
         <div
-          class="w-full rounded-md p-4 font-bold"
+          class="w-full rounded-md p-4 font-bold lg:flex lg:items-center lg:w-5/6 lg:justify-evenly lg:self-end"
           style="background-color: hsl(300, 24%, 96%)"
         >
           <!-- stars -->
-          <div class="w-24 mx-auto flex justify-between items-center mb-4">
+          <div
+            class="w-24 mx-auto flex justify-between items-center mb-4 lg:mb-0 lg:mx-0"
+          >
             <img
               src="./images/icon-star.svg"
               alt="star icon"
@@ -152,7 +165,7 @@
     </header>
 
     <!-- reviews -->
-    <main class="flex flex-col w-full items-center mb-7">
+    <main class="flex flex-col w-full items-center mb-7 lg:flex-row">
       <div
         class="w-full rounded-md p-6 text-white mb-4"
         style="background-color: hsl(300, 43%, 22%)"
@@ -227,7 +240,9 @@
     </main>
 
     <!-- attribution -->
-    <footer class="w-full text-center text-xs">
+    <footer
+      class="w-full text-center text-xs lg:absolute lg:left-0 lg:bottom-5"
+    >
       Challenge by
       <a
         href="https://www.frontendmentor.io?ref=challenge"
