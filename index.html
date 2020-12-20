@@ -33,59 +33,206 @@
       }
     </style>
   </head>
-  <body>
-    <header>
-      <h1>10,000+ of our users love our products.</h1>
+  <body class="p-4">
+    <header class="w-full text-center mt-8" style="color: hsl(300, 43%, 22%)">
+      <h1 class="text-3xl font-bold mb-5">
+        10,000+ of our users love our products.
+      </h1>
 
-      <p>
+      <p class="mb-7">
         We only provide great products combined with excellent customer service.
         See what our satisfied customers are saying about our services.
       </p>
 
-      <div>
-        <h3>Rated 5 Stars in Reviews</h3>
-      </div>
-      <div>
-        <h3>Rated 5 Stars in Report Guru</h3>
-      </div>
-      <div>
-        <h3>Rated 5 Stars in BestTech</h3>
+      <!-- ratings -->
+      <div class="flex flex-col w-full h-80 justify-evenly items-center mb-7">
+        <div
+          class="w-full rounded-md p-4 font-bold"
+          style="background-color: hsl(300, 24%, 96%)"
+        >
+          <!-- stars -->
+          <div class="w-24 mx-auto flex justify-between items-center mb-4">
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+          </div>
+          <h3>Rated 5 Stars in Reviews</h3>
+        </div>
+        <div
+          class="w-full rounded-md p-4 font-bold"
+          style="background-color: hsl(300, 24%, 96%)"
+        >
+          <!-- stars -->
+          <div class="w-24 mx-auto flex justify-between items-center mb-4">
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+          </div>
+          <h3>Rated 5 Stars in Report Guru</h3>
+        </div>
+        <div
+          class="w-full rounded-md p-4 font-bold"
+          style="background-color: hsl(300, 24%, 96%)"
+        >
+          <!-- stars -->
+          <div class="w-24 mx-auto flex justify-between items-center mb-4">
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              class="inline w-4 h-4"
+            />
+          </div>
+          <h3>Rated 5 Stars in BestTech</h3>
+        </div>
       </div>
     </header>
+
     <!-- reviews -->
-    <main>
-      <div>
-        <h2>Colton Smith</h2>
-        <h4>Verified Buyer</h4>
-        <blockquote>
+    <main class="flex flex-col w-full items-center mb-7">
+      <div
+        class="w-full rounded-md p-6 text-white mb-4"
+        style="background-color: hsl(300, 43%, 22%)"
+      >
+        <!-- review heading -->
+        <div class="flex items-center mt-3 mb-7">
+          <img
+            src="./images/image-colton.jpg"
+            alt="Colton headshot"
+            class="w-10 h-10 rounded-full mr-4"
+          />
+          <!-- heading content -->
+          <div>
+            <h2 class="font-semibold">Colton Smith</h2>
+            <h4 style="color: hsl(333, 80%, 67%)">Verified Buyer</h4>
+          </div>
+        </div>
+        <blockquote class="text-sm">
           "We needed the same printed design as the one we had ordered a week
           prior. Not only did they find the original order, but we also received
           it in time. Excellent!"
         </blockquote>
       </div>
-      <div>
-        <h2>Irene Roberts</h2>
-        <h4>Verified Buyer</h4>
-        <blockquote>
+
+      <div
+        class="w-full rounded-md p-6 text-white mb-4"
+        style="background-color: hsl(300, 43%, 22%)"
+      >
+        <!-- review heading -->
+        <div class="flex items-center mt-3 mb-7">
+          <img
+            src="./images/image-irene.jpg"
+            alt="Irene headshot"
+            class="w-10 h-10 rounded-full mr-4"
+          />
+          <!-- heading content -->
+          <div>
+            <h2 class="font-semibold">Irene Roberts</h2>
+            <h4 style="color: hsl(333, 80%, 67%)">Verified Buyer</h4>
+          </div>
+        </div>
+        <blockquote class="text-sm">
           "Customer service is always excellent and very quick turn around.
           Completely delighted with the simplicity of the purchase and the speed
           of delivery."
         </blockquote>
       </div>
-      <div>
-        <h2>Anne Wallace</h2>
-        <h4>Verified Buyer</h4>
-        <blockquote>
+
+      <div
+        class="w-full rounded-md p-6 text-white mb-4"
+        style="background-color: hsl(300, 43%, 22%)"
+      >
+        <!-- review heading -->
+        <div class="flex items-center mt-3 mb-7">
+          <img
+            src="./images/image-anne.jpg"
+            alt="Anne headshot"
+            class="w-10 h-10 rounded-full mr-4"
+          />
+          <!-- heading content -->
+          <div>
+            <h2 class="font-semibold">Anne Wallace</h2>
+            <h4 style="color: hsl(333, 80%, 67%)">Verified Buyer</h4>
+          </div>
+        </div>
+        <blockquote class="text-sm">
           "Put an order with this company and can only praise them for the very
           high standard. Will definitely use them again and recommend them to
           everyone!"
         </blockquote>
       </div>
     </main>
+
     <!-- attribution -->
-    <footer>
+    <footer class="w-full text-center text-xs">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="underline"
         >Frontend Mentor</a
       >. Coded by Skye Brown.
     </footer>
