@@ -15,7 +15,98 @@
     box-sizing: border-box;
 }
 
+/* base styles */
 body {
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
+    background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat, url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+    /* https://www.w3schools.com/css/css3_backgrounds.asp */
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+main {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: var(--very-dark-magenta-color);
+    margin-bottom: 1.5rem;
+}
+
+/* info and ratings */
+.info-and-ratings {
+    margin-bottom: 3rem;
+}
+
+.info-and-ratings p {
+    color: var(--dark-grayish-magenta-color);
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.ratings li {
+    background: var(--light-grayish-magenta-color);
+    color: var(--very-dark-magenta-color);
+    font-weight: 700;
+    padding: 1rem 0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.ratings .stars {
+    margin-bottom: 0.8rem;
+}
+
+.ratings .stars img {
+    margin: 0 3px;    
+}
+
+/* review cards */
+.review-cards .card {
+    background: var(--very-dark-magenta-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    padding: 1.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.review-cards .card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.review-cards .reviewer {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.review-cards .reviewer h2 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.review-cards .verified {
+    color: var(--soft-pink-color);
+}
+
+.review-cards blockquote {
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
 }
