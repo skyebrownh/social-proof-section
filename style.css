@@ -21,6 +21,7 @@ body {
     font-family: 'Spartan', sans-serif;
     background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat, url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
     /* https://www.w3schools.com/css/css3_backgrounds.asp */
+    min-height: 100vh;
 }
 
 ul {
@@ -42,6 +43,10 @@ h1 {
     font-size: 1.8rem;
     color: var(--very-dark-magenta-color);
     margin-bottom: 1.5rem;
+}
+
+span {
+    display: inline-block;
 }
 
 /* info and ratings */
@@ -109,4 +114,94 @@ h1 {
 .review-cards blockquote {
     margin-top: 1.5rem;
     line-height: 1.5rem;
+}
+
+/* media queries */
+@media (min-width: 651px) {
+    main {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {    
+    body {
+        background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat, url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .info-and-ratings {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info {
+        flex: 0 1 35%;
+        text-align: left;
+    }
+
+    .ratings {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 60%;
+    }
+
+    .ratings li {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .ratings li:nth-child(1) {
+        align-self: flex-start;
+    }
+    
+    .ratings li:nth-child(2) {
+        align-self: center;
+    }
+    
+    .ratings li:nth-child(3) {
+        align-self: flex-end;
+    }
+    
+    .ratings .stars {
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+
+    .review-cards {
+        display: flex;
+        column-gap: 20px;
+        min-height: 300px;
+    }
+
+    .review-cards .card:nth-child(1) {
+        align-self: flex-start;
+    }
+
+    .review-cards .card:nth-child(2) {
+        align-self: center;
+    }
+    
+    .review-cards .card:nth-child(3) {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .info {
+        flex: 0 1 40%;
+    }
+
+    .ratings {
+        flex: 0 1 50%;
+    }
 }
