@@ -156,15 +156,18 @@ span {
         align-items: center;
     }
     
-    .ratings li:nth-child(1) {
+    .ratings li:nth-child(1),
+    .review-cards .card:nth-child(1) {
         align-self: flex-start;
     }
     
-    .ratings li:nth-child(2) {
+    .ratings li:nth-child(2),
+    .review-cards .card:nth-child(2) {
         align-self: center;
     }
     
-    .ratings li:nth-child(3) {
+    .ratings li:nth-child(3),
+    .review-cards .card:nth-child(3) {
         align-self: flex-end;
     }
     
@@ -177,18 +180,6 @@ span {
         display: flex;
         column-gap: 20px;
         min-height: 300px;
-    }
-
-    .review-cards .card:nth-child(1) {
-        align-self: flex-start;
-    }
-
-    .review-cards .card:nth-child(2) {
-        align-self: center;
-    }
-    
-    .review-cards .card:nth-child(3) {
-        align-self: flex-end;
     }
 }
 
